@@ -62,7 +62,7 @@ public class AccelerometerPublisher implements SensorEventListener {
             }
 
         //when tilt right
-        } else if (x <= -2) {
+        } else if (x <= -2.5) {
             if(tiltRightTimes == 0){
                 mService.handleMoveRight();
                 lastCallTimeRight = System.currentTimeMillis();
